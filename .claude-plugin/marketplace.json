@@ -1,0 +1,14 @@
+{
+  "name": "drxs-expo-orbit-workflow",
+  "owner": {
+    "name": "robinhserrano",
+    "url": "https://github.com/robinhserrano"
+  },
+  "plugins": [
+    {
+      "name": "drxs-expo-orbit-workflow",
+      "description": "AI-native SDLC workflow (brainstorm, plan, build, review) for React Native/Expo projects, forked from VGV Wingspan.",
+      "source": "./"
+    }
+  ]
+}
