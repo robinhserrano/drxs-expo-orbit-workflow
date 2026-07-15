@@ -1,6 +1,6 @@
 # drxs-expo-orbit-workflow
 
-AI-assisted workflows for the full software development lifecycle — brainstorm, plan, build, and review — as a Claude Code plugin. Tech-agnostic by design; forked from [VGV Wingspan](https://github.com/VeryGoodOpenSource/vgv-wingspan) and paired with [drxs-ai-expo-plugin](../drxs-ai-expo-plugin) for React Native/Expo-specific conventions.
+AI-assisted workflows for the full software development lifecycle — brainstorm, plan, build, and review — as a Claude Code plugin. Tech-agnostic by design; forked from [VGV Wingspan](https://github.com/VeryGoodOpenSource/vgv-wingspan) and paired with [drxs-ai-expo-plugin](https://github.com/robinhserrano/drxs-ai-expo-plugin) for React Native/Expo-specific conventions.
 
 ## Philosophy
 
@@ -10,7 +10,7 @@ Each step of the development cycle should make subsequent steps clearer and clos
 
 drxs-expo-orbit-workflow handles the software development lifecycle — brainstorming, planning, building, and quality review. It does not enforce or assume any specific programming language, framework, or toolchain.
 
-Technology-specific concerns (linting, formatting, scaffolding, framework conventions) belong in companion plugins. drxs-expo-orbit-workflow's recommendation system detects project types and suggests the appropriate companion plugin automatically — see [drxs-ai-expo-plugin](../drxs-ai-expo-plugin) for React Native/Expo projects.
+Technology-specific concerns (linting, formatting, scaffolding, framework conventions) belong in companion plugins. drxs-expo-orbit-workflow's recommendation system detects project types and suggests the appropriate companion plugin automatically — see [drxs-ai-expo-plugin](https://github.com/robinhserrano/drxs-ai-expo-plugin) for React Native/Expo projects.
 
 ## Installation
 
@@ -68,7 +68,7 @@ Standalone skills:
 
 ## Better Together: drxs-ai-expo-plugin
 
-drxs-expo-orbit-workflow operates at a higher level, orchestrating agentic workflows across the full software development lifecycle. [drxs-ai-expo-plugin](../drxs-ai-expo-plugin) embeds React Native/Expo-specific best practices — navigation, state management, testing, security — directly into Claude Code, so AI-generated code follows production-quality standards from the first line.
+drxs-expo-orbit-workflow operates at a higher level, orchestrating agentic workflows across the full software development lifecycle. [drxs-ai-expo-plugin](https://github.com/robinhserrano/drxs-ai-expo-plugin) embeds React Native/Expo-specific best practices — navigation, state management, testing, security — directly into Claude Code, so AI-generated code follows production-quality standards from the first line.
 
 ## Output Directories
 
