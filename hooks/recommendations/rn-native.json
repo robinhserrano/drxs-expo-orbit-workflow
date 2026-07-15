@@ -1,0 +1,12 @@
+{
+  "plugin": "rn-native",
+  "detect": [
+    { "file": "app.json", "pattern": "\"expo\"" },
+    { "file": "package.json", "pattern": "\"expo\":" },
+    { "files": "docs/plan/*.md", "pattern": "expo|react-native" },
+    { "files": "docs/brainstorm/*.md", "pattern": "expo|react-native" }
+  ],
+  "verificationSkill": "rn-native:green-gate",
+  "marketplace": "<your-marketplace-repo>",
+  "description": "Expo/React Native best-practice skills (navigation, state, forms, lists, storage, testing, security) and automated lint/format hooks."
+}
