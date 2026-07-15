@@ -1,6 +1,6 @@
-# rn-orbit
+# drxs-expo-orbit-workflow
 
-rn-orbit is a collection of AI-assisted engineering tools — skills, agents, and hooks — released as a Claude Code plugin.
+drxs-expo-orbit-workflow is a collection of AI-assisted engineering tools — skills, agents, and hooks — released as a Claude Code plugin.
 
 ## Philosophy
 
@@ -8,9 +8,9 @@ Apply solid engineering practices for scalable software to AI-assisted workflows
 
 ## Tech-Agnostic by Design
 
-rn-orbit handles the software development lifecycle — brainstorming, planning, building, and quality review. It does not enforce or assume any specific programming language, framework, or toolchain.
+drxs-expo-orbit-workflow handles the software development lifecycle — brainstorming, planning, building, and quality review. It does not enforce or assume any specific programming language, framework, or toolchain.
 
-Technology-specific concerns (linting, formatting, scaffolding, framework conventions) belong in companion plugins. rn-orbit's recommendation system detects project types and suggests the appropriate companion plugin automatically — see [rn-native](../rn-native) for React Native/Expo projects.
+Technology-specific concerns (linting, formatting, scaffolding, framework conventions) belong in companion plugins. drxs-expo-orbit-workflow's recommendation system detects project types and suggests the appropriate companion plugin automatically — see [drxs-ai-expo-plugin](../drxs-ai-expo-plugin) for React Native/Expo projects.
 
 ## Workflow
 
@@ -60,7 +60,7 @@ Each agent writes a detailed report to a `raw/` subdirectory and returns a struc
 
 ## Hooks
 
-rn-orbit uses Claude Code hooks to automate behavior at tool-call boundaries. Hooks are defined in `hooks/hooks.json`.
+drxs-expo-orbit-workflow uses Claude Code hooks to automate behavior at tool-call boundaries. Hooks are defined in `hooks/hooks.json`.
 
 ### Companion Plugin Recommendations
 
@@ -70,7 +70,7 @@ A `PreToolUse` hook runs on every `Read`, `Glob`, or `Grep` call. It detects the
 
 1. `hooks/recommend-plugins.sh` fires on the first matched tool call and scans every JSON file in `hooks/recommendations/`. Each file declares a detection rule and the plugin to recommend.
 2. Every file whose detection rule matches — and whose plugin isn't already installed — is collected. All matching recommendations are emitted together in a single `additionalContext` message.
-3. A marker file (`/tmp/rn-orbit-recommend-plugins-<hash>`) is written only when at least one recommendation is emitted, suppressing repeats for the rest of the session.
+3. A marker file (`/tmp/drxs-expo-orbit-workflow-recommend-plugins-<hash>`) is written only when at least one recommendation is emitted, suppressing repeats for the rest of the session.
 
 **Recommendation file format** (`hooks/recommendations/<plugin-name>.json`):
 
@@ -106,4 +106,4 @@ A `PreToolUse` hook runs on every `Read`, `Glob`, or `Grep` call. It detects the
 ## Guidance
 
 - Be concise but clear. Use active voice. Omit needless words.
-- Technology-specific rules (linting, formatting, scaffolding) belong in companion plugins (e.g. [rn-native](../rn-native)), not in rn-orbit.
+- Technology-specific rules (linting, formatting, scaffolding) belong in companion plugins (e.g. [drxs-ai-expo-plugin](../drxs-ai-expo-plugin)), not in drxs-expo-orbit-workflow.

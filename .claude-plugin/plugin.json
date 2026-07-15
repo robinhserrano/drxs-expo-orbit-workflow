@@ -1,6 +1,6 @@
 {
-  "name": "rn-orbit",
-  "description": "rn-orbit - AI-native SDLC workflows (brainstorm, plan, build, review) for React Native/Expo projects.",
+  "name": "drxs-expo-orbit-workflow",
+  "description": "drxs-expo-orbit-workflow - AI-native SDLC workflows (brainstorm, plan, build, review) for React Native/Expo projects.",
   "version": "0.0.1",
   "keywords": [
     "software engineering",
